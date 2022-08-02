@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="styles/styles.css">
+    
   </head>
   <body class="container">
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="assets/images/logo.png" alt=""> </a>
@@ -22,13 +25,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
+                    <a class="nav-link" href="#Backpack">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
+                    <a class="nav-link" href="#Subscribe">Subscribe</a>
                   </li>
                   
 
@@ -42,7 +45,7 @@
             <section>
               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active bg-warning mt-5 p-5">
+                  <div class="carousel-item active panda-bg-info mt-5 p-5">
                     <div class="row">
                       <div class="col-lg-7 d-flex align-items-center">
                         <div>
@@ -107,8 +110,8 @@
     <main>
       <!-- categories start here -->
       <section class="mt-5 mb-5">
-        <div class="container text-center">
-          <div class="row g-2">
+        <div class="container category text-center">
+          <div class="row g-4">
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="p-3  bg-danger d-flex justify-content-around align-items-center rounded">
                 <h2 class="text-white">Bag</h2>
@@ -135,41 +138,101 @@
       <!-- categorits ends here -->
 
       <!-- shoes section starts  -->
-      <section class="mt-5">
+      <section class="mt-5" id="shoes">
         <h2>Shoes</h2>
-        <div class="card-group">
-          <div class="card border-0 me-4 shadow p-3 mb-5 bg-body rounded">
-            <img src="assets/images/shoes/shoe-1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h2 class="card-title">Reebok Dart Men’s Shoes</h2>
-              <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-               <h3>$1289</h3>
-            </div>
-            <div class="m-3">
-            <div class="btn btn-dark text-white">Buy Now</div>
+        <div class="card-group ">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card border-0 me-4 shadow p-3 mb-5 bg-body rounded ">
+              <img src="assets/images/shoes/shoe-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-title">Reebok Dart Men’s Shoes</h2>
+                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                 <h3>$1289</h3>
+              </div>
+              <div class="m-3">
+              <div class="btn btn-dark text-white">Buy Now</div>
+              </div>
             </div>
           </div>
           
             
-          <div class="card border-0 me-4 shadow p-3 mb-5 bg-body rounded">
-            <img src="assets/images/shoes/shoe-2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h2 class="card-title">Reebok Pump</h2>
-              <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-               <h3>$799</h3>
-            </div>
-            <div class="m-3">
-            <div class="btn btn-dark text-white">Buy Now</div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card border-0 me-4 shadow p-3 mb-5 bg-body rounded">
+              <img src="assets/images/shoes/shoe-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-title">Reebok Pump</h2>
+                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                 <h3>$799</h3>
+              </div>
+              <div class="m-3">
+              <div class="btn btn-dark text-white">Buy Now</div>
+              </div>
             </div>
           </div>
           
           
-     
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card border-0  shadow p-3 mb-5 bg-body rounded">
+              <img src="assets/images/shoes/shoe-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-title">Reebok All Terrain</h2>
+                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                 <h3>$699</h3>
+              </div>
+              <div class="m-3">
+              <div class="btn btn-dark text-white">Buy Now</div>
+              </div>
+            </div>
+          </div>
         
-          <div class="card border-0  shadow p-3 mb-5 bg-body rounded">
-            <img src="assets/images/shoes/shoe-3.png" class="card-img-top" alt="...">
+         
+          
+        </div>
+        
+          
+        
+      </section>
+      <section class="mt-5" id="Backpack">
+        <h2 class="mb-3">Backpack</h2>
+        <div class="card-group">
+          
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card border-0 me-4 shadow p-3 mb-5 bg-body rounded">
+              <img src="assets/images/bags/bag-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-title">Ison Backpack</h2>
+                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                 <h3>$1289</h3>
+              </div>
+              <div class="m-3">
+              <div class="btn btn-dark text-white">Buy Now</div>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card border-0 me-4 shadow p-3 mb-5 bg-body rounded">
+              <img src="assets/images/bags/bag-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-title">Biaowang Backpack</h2>
+                <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                 <h3>$799</h3>
+              </div>
+              <div class="m-3">
+              <div class="btn btn-dark text-white">Buy Now</div>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card border-0  shadow p-3 mb-5 bg-body rounded">
+            <img src="assets/images/bags/bag-3.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h2 class="card-title">Reebok All Terrain</h2>
+              <h2 class="card-title">Dxyizu WS54 Smart</h2>
               <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
                <h3>$699</h3>
             </div>
@@ -177,6 +240,16 @@
             <div class="btn btn-dark text-white">Buy Now</div>
             </div>
           </div>
+          </div>
+          
+          
+            
+        
+          
+          
+     
+        
+          
           
         </div>
         
@@ -184,8 +257,28 @@
         
       </section>
       <!-- shoes section ends  -->
+
+      <!-- subscibe states here -->
+      <section style="height: 300px;" class="d-flex justify-content-center align-items-center panda-bg-info" id="Subscribe">
+        <div >
+          <h1>LET'S STAY IN TOUCH</h1>
+        <p>Get updates on sales specials and more</p>
+
+        <form>
+          <div class="mb-1">
+            <input type="email" placeholder="example@gmail.com" class="form-control w-25" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <button type="submit" class="btn btn-primary ">Submit</button>
+        </form>
+        </div>
+      </section>
+      
+      <!-- subscibe ends  here -->
     </main>
 
+    <footer class="text-center mt-3">
+      <p><small>&copy2023.Panda Commerse.All rights reserved.Sofia.Bulgaria</small></p>
+    </footer>
 
 
 
